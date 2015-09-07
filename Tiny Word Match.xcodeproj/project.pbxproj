@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AB71AFD1B9D098100C5A0EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB71AFC1B9D098100C5A0EB /* AppDelegate.swift */; };
+		1AB71AFF1B9D098100C5A0EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB71AFE1B9D098100C5A0EB /* ViewController.swift */; };
+		1AB71B021B9D098100C5A0EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB71B001B9D098100C5A0EB /* Main.storyboard */; };
+		1AB71B041B9D098100C5A0EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB71B031B9D098100C5A0EB /* Images.xcassets */; };
+		1AB71B071B9D098100C5A0EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB71B051B9D098100C5A0EB /* LaunchScreen.xib */; };
+		1AB71B131B9D098100C5A0EB /* Tiny_Word_MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB71B121B9D098100C5A0EB /* Tiny_Word_MatchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AB71B0D1B9D098100C5A0EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB71AEF1B9D098100C5A0EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB71AF61B9D098100C5A0EB;
+			remoteInfo = "Tiny Word Match";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AB71AF71B9D098100C5A0EB /* Tiny Word Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Word Match.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB71AFB1B9D098100C5A0EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB71AFC1B9D098100C5A0EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AB71AFE1B9D098100C5A0EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AB71B011B9D098100C5A0EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AB71B031B9D098100C5A0EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1AB71B061B9D098100C5A0EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1AB71B0C1B9D098100C5A0EB /* Tiny Word MatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tiny Word MatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB71B111B9D098100C5A0EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB71B121B9D098100C5A0EB /* Tiny_Word_MatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiny_Word_MatchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AB71AF41B9D098100C5A0EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB71B091B9D098100C5A0EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AB71AEE1B9D098100C5A0EB = {
+			isa = PBXGroup;
+			children = (
+				1AB71AF91B9D098100C5A0EB /* Tiny Word Match */,
+				1AB71B0F1B9D098100C5A0EB /* Tiny Word MatchTests */,
+				1AB71AF81B9D098100C5A0EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AB71AF81B9D098100C5A0EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AB71AF71B9D098100C5A0EB /* Tiny Word Match.app */,
+				1AB71B0C1B9D098100C5A0EB /* Tiny Word MatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AB71AF91B9D098100C5A0EB /* Tiny Word Match */ = {
+			isa = PBXGroup;
+			children = (
+				1AB71AFC1B9D098100C5A0EB /* AppDelegate.swift */,
+				1AB71AFE1B9D098100C5A0EB /* ViewController.swift */,
+				1AB71B001B9D098100C5A0EB /* Main.storyboard */,
+				1AB71B031B9D098100C5A0EB /* Images.xcassets */,
+				1AB71B051B9D098100C5A0EB /* LaunchScreen.xib */,
+				1AB71AFA1B9D098100C5A0EB /* Supporting Files */,
+			);
+			path = "Tiny Word Match";
+			sourceTree = "<group>";
+		};
+		1AB71AFA1B9D098100C5A0EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AB71AFB1B9D098100C5A0EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AB71B0F1B9D098100C5A0EB /* Tiny Word MatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AB71B121B9D098100C5A0EB /* Tiny_Word_MatchTests.swift */,
+				1AB71B101B9D098100C5A0EB /* Supporting Files */,
+			);
+			path = "Tiny Word MatchTests";
+			sourceTree = "<group>";
+		};
+		1AB71B101B9D098100C5A0EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AB71B111B9D098100C5A0EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AB71AF61B9D098100C5A0EB /* Tiny Word Match */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB71B161B9D098100C5A0EB /* Build configuration list for PBXNativeTarget "Tiny Word Match" */;
+			buildPhases = (
+				1AB71AF31B9D098100C5A0EB /* Sources */,
+				1AB71AF41B9D098100C5A0EB /* Frameworks */,
+				1AB71AF51B9D098100C5A0EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tiny Word Match";
+			productName = "Tiny Word Match";
+			productReference = 1AB71AF71B9D098100C5A0EB /* Tiny Word Match.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AB71B0B1B9D098100C5A0EB /* Tiny Word MatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB71B191B9D098100C5A0EB /* Build configuration list for PBXNativeTarget "Tiny Word MatchTests" */;
+			buildPhases = (
+				1AB71B081B9D098100C5A0EB /* Sources */,
+				1AB71B091B9D098100C5A0EB /* Frameworks */,
+				1AB71B0A1B9D098100C5A0EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AB71B0E1B9D098100C5A0EB /* PBXTargetDependency */,
+			);
+			name = "Tiny Word MatchTests";
+			productName = "Tiny Word MatchTests";
+			productReference = 1AB71B0C1B9D098100C5A0EB /* Tiny Word MatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AB71AEF1B9D098100C5A0EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Cassiano e Julio";
+				TargetAttributes = {
+					1AB71AF61B9D098100C5A0EB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					1AB71B0B1B9D098100C5A0EB = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 1AB71AF61B9D098100C5A0EB;
+					};
+				};
+			};
+			buildConfigurationList = 1AB71AF21B9D098100C5A0EB /* Build configuration list for PBXProject "Tiny Word Match" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AB71AEE1B9D098100C5A0EB;
+			productRefGroup = 1AB71AF81B9D098100C5A0EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AB71AF61B9D098100C5A0EB /* Tiny Word Match */,
+				1AB71B0B1B9D098100C5A0EB /* Tiny Word MatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AB71AF51B9D098100C5A0EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB71B021B9D098100C5A0EB /* Main.storyboard in Resources */,
+				1AB71B071B9D098100C5A0EB /* LaunchScreen.xib in Resources */,
+				1AB71B041B9D098100C5A0EB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB71B0A1B9D098100C5A0EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AB71AF31B9D098100C5A0EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB71AFF1B9D098100C5A0EB /* ViewController.swift in Sources */,
+				1AB71AFD1B9D098100C5A0EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB71B081B9D098100C5A0EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB71B131B9D098100C5A0EB /* Tiny_Word_MatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AB71B0E1B9D098100C5A0EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB71AF61B9D098100C5A0EB /* Tiny Word Match */;
+			targetProxy = 1AB71B0D1B9D098100C5A0EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AB71B001B9D098100C5A0EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AB71B011B9D098100C5A0EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AB71B051B9D098100C5A0EB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AB71B061B9D098100C5A0EB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AB71B141B9D098100C5A0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AB71B151B9D098100C5A0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AB71B171B9D098100C5A0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tiny Word Match/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1AB71B181B9D098100C5A0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tiny Word Match/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1AB71B1A1B9D098100C5A0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tiny Word MatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiny Word Match.app/Tiny Word Match";
+			};
+			name = Debug;
+		};
+		1AB71B1B1B9D098100C5A0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tiny Word MatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiny Word Match.app/Tiny Word Match";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AB71AF21B9D098100C5A0EB /* Build configuration list for PBXProject "Tiny Word Match" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB71B141B9D098100C5A0EB /* Debug */,
+				1AB71B151B9D098100C5A0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AB71B161B9D098100C5A0EB /* Build configuration list for PBXNativeTarget "Tiny Word Match" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB71B171B9D098100C5A0EB /* Debug */,
+				1AB71B181B9D098100C5A0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1AB71B191B9D098100C5A0EB /* Build configuration list for PBXNativeTarget "Tiny Word MatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB71B1A1B9D098100C5A0EB /* Debug */,
+				1AB71B1B1B9D098100C5A0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AB71AEF1B9D098100C5A0EB /* Project object */;
+}
