@@ -28,8 +28,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehu-7a-Xws"/>
-                                    <segue destination="KtX-5q-cgL" kind="show" id="c63-fW-8QB"/>
+                                    <segue destination="KtX-5q-cgL" kind="show" identifier="ShowWordList" id="JEq-D4-V3K"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="-85" y="213"/>
         </scene>
-        <!--View Controller-->
+        <!--Word List View Controller-->
         <scene sceneID="DTC-6a-Osm">
             <objects>
-                <viewController id="KtX-5q-cgL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WordListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KtX-5q-cgL" customClass="WordListViewController" customModule="Tiny_Word_Match" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="umg-zb-Fbu"/>
                         <viewControllerLayoutGuide type="bottom" id="K0d-on-4xC"/>
@@ -80,6 +79,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="chosenWord" destination="CwJ-AZ-tR8" id="a2C-0j-nzE"/>
                         <outlet property="view" destination="VMd-oC-7OQ" id="GXz-iw-aWb"/>
                     </connections>
                 </viewController>

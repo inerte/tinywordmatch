@@ -9,11 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     @IBOutlet weak var word: UITextField!
     
-    @IBAction func startButton(sender: UIButton) {
-        
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "ShowWordList") {
+            var wordListVC = segue.destinationViewController as! WordListViewController;
+
+            wordListVC.toPass = word.text
+        }
     }
 }
 
