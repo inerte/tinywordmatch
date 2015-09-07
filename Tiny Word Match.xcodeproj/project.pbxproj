@@ -411,6 +411,7 @@
 				1AB71B181B9D098100C5A0EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AB71B191B9D098100C5A0EB /* Build configuration list for PBXNativeTarget "Tiny Word MatchTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				1AB71B1B1B9D098100C5A0EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
