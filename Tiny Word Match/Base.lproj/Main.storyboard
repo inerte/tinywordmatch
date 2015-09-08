@@ -75,12 +75,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDP-Ks-sNc">
+                                <rect key="frame" x="120" y="159" width="361" height="281"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="chosenWord" destination="CwJ-AZ-tR8" id="a2C-0j-nzE"/>
                         <outlet property="view" destination="VMd-oC-7OQ" id="GXz-iw-aWb"/>
+                        <outlet property="wordListLabel" destination="QDP-Ks-sNc" id="VBB-5t-VVe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYR-OH-jP6" userLabel="First Responder" sceneMemberID="firstResponder"/>

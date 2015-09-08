@@ -14,13 +14,14 @@ class WordListViewController: UIViewController, NSXMLParserDelegate {
     
     @IBOutlet weak var chosenWord: UILabel!
     
+    @IBOutlet weak var wordListLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         chosenWord.text = toPass
         
-        let url = "http://api.wolframalpha.com/v2/query?input=cat+rhyme&appid=75JR3G-A8R54WGRH6"
+        let url = "http://api.wolframalpha.com/v2/query?input=\(toPass)+rhyme&appid=75JR3G-A8R54WGRH6"
         
         // create the request & response
         var request = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
@@ -33,7 +34,13 @@ class WordListViewController: UIViewController, NSXMLParserDelegate {
         
         let xml = SWXMLHash.parse(data)
         
-        println("queryresult.pod.withAttr")
-        println(xml["queryresult"]["pod"].withAttr("title", "Result")["subpod"]["plaintext"].element?.text)
+        if let resultWords = xml["queryresult"]["pod"].withAttr("title", "Result")["subpod"]["plaintext"].element?.text {
+            
+            let wordList = split(resultWords) {$0 == "|"}.map{$0.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())}
+
+            println("wordList \(wordList)")
+            
+            wordListLabel.text = join(", ", wordList)
+        }
     }
 }
