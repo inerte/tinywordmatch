@@ -22,6 +22,9 @@
                                 <rect key="frame" x="66" y="285" width="468" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="s4P-Zo-Ee8"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W34-Cx-utV">
                                 <rect key="frame" x="501" y="323" width="33" height="30"/>
@@ -51,6 +54,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="startButton" destination="W34-Cx-utV" id="dw5-Uz-fjs"/>
                         <outlet property="word" destination="lxI-XM-pG8" id="zPQ-6C-nfh"/>
                     </connections>
                 </viewController>

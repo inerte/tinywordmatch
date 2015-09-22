@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var word: UITextField!
+    @IBOutlet weak var startButton: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        startButton.enabled = false
+    }
+    
+    @IBAction func valueChanged(sender: UITextField) {
+        startButton.enabled = sender.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).characters.count >= 2
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "ShowWordList") {
