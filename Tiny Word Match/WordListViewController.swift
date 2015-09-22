@@ -36,8 +36,13 @@ class WordListViewController: UIViewController, NSXMLParserDelegate {
         
         if let resultWords = xml["queryresult"]["pod"].withAttr("title", "Result")["subpod"]["plaintext"].element?.text {
             
-            let wordList = resultWords.characters.split {$0 == "|"}.map { String($0) }.map{$0.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())}
-
+            var wordList = resultWords.characters.split {$0 == "|"}.map { String($0) }.map{$0.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())}
+            
+            if (wordList.last!.containsString("(total: ")) {
+                print("wordList.last?.containsString", wordList.last?.containsString("(total: "))
+                wordList.popLast() // Remove the "... (total: XX) (based on typical American pronunciation)" sent by Wolfram Alpha
+            }
+            
             print("wordList \(wordList)")
             
             wordListLabel.text = wordList.joinWithSeparator(", ")
