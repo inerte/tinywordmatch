@@ -24,23 +24,23 @@ class WordListViewController: UIViewController, NSXMLParserDelegate {
         let url = "http://api.wolframalpha.com/v2/query?input=\(toPass)+rhyme&appid=75JR3G-A8R54WGRH6"
         
         // create the request & response
-        var request = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
+        let request = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
         var response: NSURLResponse?
         var error: NSError?
         
         request.HTTPMethod = "GET"
         // send the request
-        let data: NSData = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &error)!
+        let data: NSData = try! NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
         
         let xml = SWXMLHash.parse(data)
         
         if let resultWords = xml["queryresult"]["pod"].withAttr("title", "Result")["subpod"]["plaintext"].element?.text {
             
-            let wordList = split(resultWords) {$0 == "|"}.map{$0.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())}
+            let wordList = resultWords.characters.split {$0 == "|"}.map { String($0) }.map{$0.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())}
 
-            println("wordList \(wordList)")
+            print("wordList \(wordList)")
             
-            wordListLabel.text = join(", ", wordList)
+            wordListLabel.text = wordList.joinWithSeparator(", ")
         }
     }
 }

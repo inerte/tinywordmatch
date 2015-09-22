@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "ShowWordList") {
-            var wordListVC = segue.destinationViewController as! WordListViewController;
+            let wordListVC = segue.destinationViewController as! WordListViewController;
 
             wordListVC.toPass = word.text
         }
